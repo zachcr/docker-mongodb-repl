@@ -1,4 +1,4 @@
-FROM dockerfile/mongodb
+FROM dockerfile/mongodb:latest
 
 RUN sed -i 's/#replSet=setname/replSet=rs0/' /etc/mongod.conf
 RUN sed -i 's/bind_ip =/#bind_ip =/' /etc/mongod.conf
